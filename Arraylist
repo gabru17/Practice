@@ -1,0 +1,24 @@
+package coreJava;
+
+import java.util.ArrayList;
+
+public class arrayListExample {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+		
+		ArrayList<String> a = new ArrayList<String>();
+		a.add("sahil");
+		a.add(1,"sharma");
+		a.add("apple");
+		System.out.println(a);
+		a.remove(0);
+		System.out.println(a.contains("jam"));
+		System.out.println(a.indexOf("sharma"));
+		System.out.println(a.size());
+		System.out.println(a.isEmpty());
+	}
+
+}
