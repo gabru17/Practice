@@ -1,0 +1,19 @@
+public class ExceptionHandlingExample {
+    public static void main(String[] args) {
+        int[] a = new int[5];
+
+        try {
+            // Attempt to perform division by zero and assign to an out-of-bounds index
+            a[8] = 30 / 0;
+        } catch (ArrayIndexOutOfBoundsException e) {
+            System.out.println("ArrayIndexOutOfBoundsException caught: Array index out of bounds.");
+        }catch (ArithmeticException e) {
+            System.out.println("ArithmeticException caught: Division by zero.");
+        } 
+        finally {
+            System.out.println("Execution completed.");
+        }
+    }
+}
+
+
